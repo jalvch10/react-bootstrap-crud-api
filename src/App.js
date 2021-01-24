@@ -8,7 +8,7 @@ import {
   Modal,
   Spinner,
   Form,
-  Alert,
+  Alert
 } from "react-bootstrap";
 import axios from "axios";
 
@@ -67,6 +67,7 @@ export default function App() {
         element.username = username;
         element.website = website;
         element.email = email;
+        element.phone = phone;
         array.push(element);
       }
     });
@@ -91,7 +92,7 @@ export default function App() {
       username: username,
       website: website,
       email: email,
-      phone: phone,
+      phone: phone
     };
     setData((user) => [...user, add]);
     setShowAlert(true);
@@ -156,7 +157,7 @@ export default function App() {
                   />
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label>Company</Form.Label>
+                  <Form.Label>Phone</Form.Label>
                   <Form.Control
                     type="text"
                     onChange={(e) => setPhone(e.target.value)}
@@ -196,7 +197,7 @@ export default function App() {
                         borderRadius: "20px",
                         margin: "1vh",
                         minWidth: "30vh",
-                        minHeight: "20vh",
+                        minHeight: "20vh"
                       }}
                     >
                       <Card.Body>
@@ -273,7 +274,7 @@ export default function App() {
                     />
                   </Form.Group>
                   <Form.Group>
-                    <Form.Label>Company</Form.Label>
+                    <Form.Label>Phone</Form.Label>
                     <Form.Control
                       type="text"
                       onChange={(e) => setPhone(e.target.value)}
